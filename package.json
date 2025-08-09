@@ -1,5 +1,6 @@
 {
-  
+  "homepage": "https://Fosu-Kelvin.github.io/DesignEdge",
+
   "name": "design_edge",
   
   "version": "0.1.0",
@@ -25,9 +26,6 @@
   
     
   "firebase": "^12.1.0",
-  
-    
-  "gh-pages": "^6.3.0",
   
     
   "papaparse": "^5.5.3",
@@ -132,6 +130,13 @@
   
     
   ]
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "gh-pages": "^6.3.0"
   
   }
 }

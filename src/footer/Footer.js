@@ -26,7 +26,7 @@ const Footer = () => {
             <h4>QUICK LINKS</h4>
             <ul>
               <li>
-                <a href="/#classes">Classes</a>
+                <a href={`${process.env.PUBLIC_URL}#classes`}>Classes</a>
               </li>
               <li>
                 <Link to="/company">Company</Link>

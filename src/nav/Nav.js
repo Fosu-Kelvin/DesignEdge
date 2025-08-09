@@ -39,7 +39,7 @@ const Nav = () => {
     <div className={`${toggleIcon ? "active01" : ""}`}>
     <header className={`tile_container ${toggleIcon ?  "active" :""}`}>
       <nav className='logo'><Link to='/'><img src={logo} alt='logo' style={{width:'4.5rem',height:'auto'}} /></Link></nav>
-      <nav className='non-toggle'><a href="/#classes">Classes</a></nav>
+      <nav className='non-toggle'><a href={`${process.env.PUBLIC_URL}#classes`}>Classes</a></nav>
       <nav className='non-toggle'><Link  to="/company">Company</Link></nav>
       <nav className='non-toggle'><Link to="/">Media</Link></nav>
       <nav className="toggle_icon" onClick={handleToggleIcon}>
