@@ -1,0 +1,478 @@
+@import "./variables";
+
+@function weight($weight-name) {
+  @return map-get($font-weight, $weight-name);
+}
+
+section.container_1 {
+  border-bottom: 1px solid $accent-color;
+  padding-top: 5rem;
+  @include flexCenter(column);
+  margin: 0 auto;
+  width: 90%;
+  z-index: 1;
+}
+
+.head-1 {
+  @include flexCenter(row);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  width: 90%;
+}
+
+h1.conquer {
+  font-weight: weight(medium);
+  font-size: 10rem;
+}
+h1.trade {
+  margin-left: 3.75rem;
+  font-weight: weight(regular);
+  font-size: 4rem;
+  line-height: 0.7;
+}
+
+p,
+.parag {
+  margin: 0 auto;
+  width: 30%;
+  line-height: 2;
+  margin-bottom: 5rem;
+  padding: 0.5rem;
+  color: $accent-color;
+  font-size: 1rem;
+}
+
+.bottom-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  font-weight: weight(regular);
+}
+
+section button {
+  background-color: $primary-color;
+  color: $text-color;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+section.container-2 {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+section.container-2 h1 {
+  font-size: 3rem;
+  font-weight: weight(large);
+  margin: 0 auto;
+  width: 90%;
+}
+
+section.container-2 .box {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  width: 100%;
+  gap: 1.5625rem;
+}
+
+section.container-2 .box p {
+  font-size: 1rem;
+  color: $accent-color;
+  width: 100%;
+  margin-left: 3.44rem;
+}
+
+section.container-2 .box .box1 {
+  background: hsl(0, 0%, 15%);
+  width: 40%;
+  padding: 1rem 0;
+
+  @include flexCenter(column);
+}
+
+.box1-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.box1-2 p>a:hover{
+color: $text-color;
+}
+
+section.container-2 .box .box1 h2 {
+  font-size: 1.2rem;
+  font-weight: weight(regular);
+  margin: 0 auto;
+  width: 80%;
+}
+
+section.container-2 .box .box1 p {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  color: $accent-color;
+}
+
+section.container-2 .box .box2 {
+  background: hsl(0, 0%, 15%);
+  width: 40%;
+  padding: 1rem 0;
+  @include flexCenter(column);
+}
+
+section.container-2 .box .box2 h2 {
+  font-size: 1.2rem;
+  font-weight: weight(regular);
+  margin: 0 auto;
+  width: 80%;
+}
+
+section.container-2 .box .box2 p {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  color: $accent-color;
+}
+
+section.container-2 a {
+  text-decoration: none;
+  color: $accent-color;
+}
+
+section.container-3 {
+  @include flexCenter(column);
+  background: hsl(0, 0%, 15%);
+  width: 80%;
+  left: 50%;
+  margin: 0 auto;
+
+  padding: 5rem;
+
+  padding-bottom: 0rem;
+
+  margin-bottom: 8rem;
+}
+section.container-3 h2 {
+  font-size: 3rem;
+}
+
+.container-3-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4rem;
+}
+
+.container-3-box h3 {
+  width: 100%;
+  font-weight: weight(medium);
+}
+
+.container-3-box p {
+  width: 100%;
+
+  margin-left: -0.7rem;
+}
+
+.container-4 {
+  @include flexCenter(column);
+  width: 80%;
+  margin: 0 auto;
+  row-gap: 5rem;
+  margin-bottom: 8rem;
+}
+
+.container-4 h1 {
+  font-size: 7rem;
+  line-height: 0.9;
+}
+
+.bottom-4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+span.conquer {
+  color: $text-color;
+}
+
+
+
+button{
+  
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 0;
+  
+}
+
+
+button{
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $text-color;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(239, 231, 231, 0.2);
+  }
+}
+
+.custom-link{
+    color: $accent-color;
+    
+}
+
+
+
+@media only screen and (max-width: 959px) {
+  .head-1 {
+    @include flexCenter(column);
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+
+  h1.conquer {
+    font-weight: weight(medium);
+    font-size: 7rem;
+    margin-top: -2rem;
+  }
+  h1.trade {
+    margin-left: 0;
+    font-weight: weight(regular);
+    font-size: 4rem;
+    line-height: 0;
+  }
+
+  p,
+  .parag {
+    margin: 0 auto;
+    width: 50%;
+    line-height: 2;
+    margin-bottom: 5rem;
+    padding: 0.5rem;
+    color: $accent-color;
+    font-size: 1rem;
+  }
+
+  .bottom-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  section h3 {
+    font-size: 1rem;
+    white-space: nowrap;
+    font-weight: weight(regular);
+  }
+
+  section button {
+    background-color: $primary-color;
+
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: -1.5rem;
+  }
+
+  section.container-2 h1 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  section.container-2 .box {
+    display: flex;
+    flex-direction: (column);
+    justify-content: space-between;
+    margin: 0rem auto;
+
+    width: 80%;
+    gap: 0rem;
+  }
+
+  .box1-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.container-2 .box p {
+    font-size: 1rem;
+    color: $accent-color;
+    width: 100%;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  section.container-2 .box .box1 {
+    width: 50%;
+  }
+
+  section.container-2 .box .box2 {
+    width: 50%;
+  }
+
+  section.container-3 h2 {
+    font-size: 3rem;
+
+    line-height: 1;
+  }
+
+  .container-4 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    row-gap: 5rem;
+  }
+
+  .head-4 {
+    width: 100%;
+  }
+
+  .container-4 h1 {
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  span.conquer {
+    display: flex;
+    color: #fff;
+    font-size: 4rem;
+    justify-content: center;
+  }
+
+  .bottom-4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    width: 90%;
+  }
+
+  section.container-3 {
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+  }
+
+  .container-3-box h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .container-3-box h3,
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0rem;
+  }
+
+  .container-3-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  .head-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1.conquer {
+    font-size: 5rem;
+  }
+  h1.trade {
+    font-weight: weight(regular);
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .parag {
+    width: 80%;
+  }
+
+  .bottom-1 {
+    column-gap: 1rem;
+  }
+
+  section h3 {
+    font-size: 1rem;
+    white-space: wrap;
+    font-weight: weight(regular);
+  }
+
+  .box1-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  section.container-2 .box .box1 {
+    width: 100%;
+  }
+
+  section.container-2 .box .box2 {
+    width: 100%;
+  }
+
+  .container-3-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 0;
+    gap: 0rem;
+
+    margin-top: 2rem;
+  }
+  .container-3-box p {
+    margin-bottom: 1.25em;
+  }
+
+  section.container-2 .box .box1 {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  section.container-2 .box .box2 {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  section.container-3 h2 {
+    font-size: 2.5rem;
+
+    line-height: 1;
+  }
+
+  .bottom-4 {
+    column-gap: 1rem;
+  }
+}

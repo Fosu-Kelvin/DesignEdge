@@ -1,0 +1,16 @@
+$primary-color:#000;
+$text-color:#fff;
+$accent-color:hsl(0, 0%, 60%);
+$font-weight:(
+    "regular":400,
+    "medium":700,
+    "large" : 900
+);
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+

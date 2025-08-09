@@ -1,0 +1,164 @@
+@import './variables';
+
+
+.tile_container{
+ @include flexCenter(row);
+ column-gap: 2.5rem;
+ z-index: 1000;
+ border-radius:5.625rem;
+ background-color: rgba(255,255,255,0.1);
+ backdrop-filter: blur(10px);
+box-shadow: 0 0  10px rgba(0, 0, 0, 0.2);
+ position: fixed;
+ top: 3rem;
+padding: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ cursor: pointer;
+ z-index: 1000;
+ 
+}
+
+.logo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-bottom:-1rem;
+    margin-top: -1rem;
+}
+
+.tile_container a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.tile_container a:hover{
+    color: $accent-color;
+}
+
+.toggle_icon{
+display: none;
+}
+
+.active03{
+    display: none;
+   
+}
+
+.p-copyright{
+    display: none;
+}
+
+.social-icons{
+    display: none;
+}
+
+
+
+
+
+ @media only screen and (max-width:959px){
+
+    .tile_container{
+        column-gap: 15rem;
+        
+    }
+
+.non-toggle{
+    display: none;
+}
+
+.toggle_icon{
+    display: flex;
+    
+    }
+
+ 
+
+.active{
+         background-color: $primary-color; 
+        top: 0;
+     border-radius: 0;
+     border-bottom: 1px solid $accent-color;
+        padding: 10px;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+       
+        font-size: 1.5rem;
+        
+        
+      }
+
+      .active02{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 2rem;
+        font-size: 1.5rem;
+        color: $accent-color;
+        z-index: 1000;
+     
+       
+      }
+
+      @keyframes slideIn {
+            from{
+                transform: translateY(-100%);
+            }
+            to{
+                transform: translateY(0);
+            }
+      }
+
+      .active01{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: flex-start;
+        align-items: center;
+       left: 0;
+       top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        animation: slideIn 0.3s ease-in-out ;
+        z-index: 1000;
+       
+        
+      }
+
+      .p-copyright-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$text-color;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+   .social-icon01{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+  
+   }
+
+    
+     
+}
+
+@media only screen and (max-width:559px){
+    .tile_container{
+        column-gap: 8rem;
+        
+    }
+}
+ 
+
+
