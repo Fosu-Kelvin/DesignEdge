@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DesignEdge/static/css/main.8fd3ebe4.css",
-    "main.js": "/DesignEdge/static/js/main.8dbcf3ef.js",
+    "main.css": "/DesignEdge/static/css/main.f90a3e71.css",
+    "main.js": "/DesignEdge/static/js/main.cd3683ec.js",
     "static/media/logoD.jpg": "/DesignEdge/static/media/logoD.ea7b3888560bc0b0fddb.jpg",
     "index.html": "/DesignEdge/index.html",
-    "main.8fd3ebe4.css.map": "/DesignEdge/static/css/main.8fd3ebe4.css.map",
-    "main.8dbcf3ef.js.map": "/DesignEdge/static/js/main.8dbcf3ef.js.map"
+    "main.f90a3e71.css.map": "/DesignEdge/static/css/main.f90a3e71.css.map",
+    "main.cd3683ec.js.map": "/DesignEdge/static/js/main.cd3683ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fd3ebe4.css",
-    "static/js/main.8dbcf3ef.js"
+    "static/css/main.f90a3e71.css",
+    "static/js/main.cd3683ec.js"
   ]
 }
