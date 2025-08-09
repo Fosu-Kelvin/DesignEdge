@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+
 import './Enroll.scss'
 import { db } from '../firebase';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc ,serverTimestamp } from 'firebase/firestore';
 
 const Enroll = () => {
     const [name, setName] = useState('')
@@ -12,7 +12,7 @@ const Enroll = () => {
     const [address,setAddress] = useState('')
     const [selectItem,setSelectItem] = useState('')
 
-    const navigate = useNavigate()
+   
 const handleSubmit = async (e) => {
   e.preventDefault();
   
@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
     address,
     message,
     source: selectItem,
-    timestamp: new Date()
+    timestamp: serverTimestamp()
   };
 
   try {
@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
     setAddress("")
     setSelectItem("")
     SetEmail("")
-    navigate('/')
+    
   } catch (err) {
     console.error("Error submitting form:", err);
     alert("Submission failed. Please try again.");
@@ -68,7 +68,7 @@ const handleSubmit = async (e) => {
             <input type="text" value={address} placeholder='Your address' onChange={(e)=>setAddress(e.target.value)}/>
             <label htmlFor="">How did you hear about us?</label>
             <select value={selectItem} onChange={(e)=>setSelectItem(e.target.value)}>
-              <option className="disable-option" value="" disabled selected   >Select one</option>
+              <option className="disable-option" value="" disabled   >Select one</option>
               <option value="website">website</option>
               <option value="social media">social media</option>
               <option value="friends/family">friends/famly</option>
