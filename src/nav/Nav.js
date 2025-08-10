@@ -105,7 +105,7 @@ const Nav = () => {
     >
           <FaTiktok size={24} />
         </a>
-        <a href="https://instagram.com/@joindesignedge"
+        <a href="https://www.instagram.com/joindesignedge"
         target="_blank" 
     rel="noopener noreferrer"
      style={{color:"#fff"}}
