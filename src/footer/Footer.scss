@@ -100,6 +100,12 @@ a {
     text-align: center;
 }
 
+.finance-copyright{
+  border-top: 1px solid hsl(0, 0%, 80%);
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  padding: 2rem;
+}
+
 @media only screen and (max-width: 959px) {
   .foot-container2 {
     display: grid;
@@ -128,6 +134,10 @@ a {
       
        .footbox4{
         margin-top: 5rem;
+       }
+       .finance-copyright{
+        padding: 1rem;
+        font-size: 13px;
        }
       
     

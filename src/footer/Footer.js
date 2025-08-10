@@ -3,6 +3,7 @@ import logo from "./images/logoD.jpg";
 import { Link } from "react-router-dom";
 import {  scroller } from 'react-scroll';
 import { useNavigate,useLocation } from "react-router-dom";
+import {  FaInstagram, FaTiktok,FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const today = new Date();
@@ -80,7 +81,33 @@ const Footer = () => {
                   Email: info@joindesignedge.com
                 </a>
               </li>
+             
             </ul>
+            <div style={{display:"flex",gap:"1rem"}}>
+             
+                <a href="https://tiktok.com/@joindesignedge"
+                        target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{color:"#000"}}
+                    >
+                          <FaTiktok size={24} />
+                        </a>
+                        <a href="https://www.instagram.com/joindesignedge"
+                        target="_blank" 
+                    rel="noopener noreferrer"
+                     style={{color:"#000"}}
+                    >
+                         <FaInstagram size={24} />
+                        </a>
+                          <a href="https://m.youtube.com/@joindesignedge"
+                        target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{color:"#000"}}
+                    >
+                          <FaYoutube size={24} />
+                        </a>
+              
+            </div>
           </div>
         </div>
         <div className="footbox4">
