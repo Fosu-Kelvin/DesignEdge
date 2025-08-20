@@ -118,7 +118,7 @@ const Nav = () => {
         </a>
 
         <a
-          href="https://m.youtube.com/@joindesignedge"
+          href="https://m.youtube.com/@joindesignedge1"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "#fff" }}
